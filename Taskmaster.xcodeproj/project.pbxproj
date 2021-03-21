@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E836A4862606F2F900E1A3E9 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836A4852606F2F900E1A3E9 /* TodoListView.swift */; };
+		E836A4892606F33000E1A3E9 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836A4882606F33000E1A3E9 /* TodoCell.swift */; };
+		E836A48E2606F37D00E1A3E9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836A48D2606F37D00E1A3E9 /* PersistenceManager.swift */; };
+		E836A4912606F3A500E1A3E9 /* TodoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836A4902606F3A500E1A3E9 /* TodoOperations.swift */; };
 		E8A530122604036800E0959A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A530112604036800E0959A /* AppDelegate.swift */; };
 		E8A530142604036800E0959A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A530132604036800E0959A /* SceneDelegate.swift */; };
-		E8A530162604036800E0959A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A530152604036800E0959A /* ContentView.swift */; };
 		E8A530182604036800E0959A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A530172604036800E0959A /* Assets.xcassets */; };
 		E8A5301B2604036800E0959A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A5301A2604036800E0959A /* Preview Assets.xcassets */; };
 		E8A5301E2604036800E0959A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A5301C2604036800E0959A /* LaunchScreen.storyboard */; };
+		E8DB43D22606F689005899A5 /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8DB43D02606F689005899A5 /* Todo.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E836A4852606F2F900E1A3E9 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		E836A4882606F33000E1A3E9 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		E836A48D2606F37D00E1A3E9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		E836A4902606F3A500E1A3E9 /* TodoOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoOperations.swift; sourceTree = "<group>"; };
 		E8A5300E2604036800E0959A /* Taskmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskmaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A530112604036800E0959A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A530132604036800E0959A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8A530152604036800E0959A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8A530172604036800E0959A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8A5301A2604036800E0959A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8A5301D2604036800E0959A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A5301F2604036800E0959A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DB43D12606F689005899A5 /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8878A6B2606F5A700C1A82A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8DB43D02606F689005899A5 /* Todo.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E8A530052604036800E0959A = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +76,9 @@
 				E8A530132604036800E0959A /* SceneDelegate.swift */,
 				E8F7F8412604090700666981 /* Persistence */,
 				E8F7F840260408D900666981 /* Views */,
-				E8A530172604036800E0959A /* Assets.xcassets */,
+				E8878A6B2606F5A700C1A82A /* Model */,
 				E8A5301C2604036800E0959A /* LaunchScreen.storyboard */,
+				E8A530172604036800E0959A /* Assets.xcassets */,
 				E8A5301F2604036800E0959A /* Info.plist */,
 				E8A530192604036800E0959A /* Preview Content */,
 			);
@@ -79,8 +96,8 @@
 		E8F7F840260408D900666981 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E8A530152604036800E0959A /* ContentView.swift */,
-				E8F7F8422604091900666981 /* Model */,
+				E836A4852606F2F900E1A3E9 /* TodoListView.swift */,
+				E836A4882606F33000E1A3E9 /* TodoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,15 +105,10 @@
 		E8F7F8412604090700666981 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				E836A4902606F3A500E1A3E9 /* TodoOperations.swift */,
+				E836A48D2606F37D00E1A3E9 /* PersistenceManager.swift */,
 			);
 			path = Persistence;
-			sourceTree = "<group>";
-		};
-		E8F7F8422604091900666981 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A530122604036800E0959A /* AppDelegate.swift in Sources */,
+				E8DB43D22606F689005899A5 /* Todo.xcdatamodeld in Sources */,
+				E836A4912606F3A500E1A3E9 /* TodoOperations.swift in Sources */,
+				E836A48E2606F37D00E1A3E9 /* PersistenceManager.swift in Sources */,
 				E8A530142604036800E0959A /* SceneDelegate.swift in Sources */,
-				E8A530162604036800E0959A /* ContentView.swift in Sources */,
+				E836A4862606F2F900E1A3E9 /* TodoListView.swift in Sources */,
+				E836A4892606F33000E1A3E9 /* TodoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8DB43D02606F689005899A5 /* Todo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8DB43D12606F689005899A5 /* Todo.xcdatamodel */,
+			);
+			currentVersion = E8DB43D12606F689005899A5 /* Todo.xcdatamodel */;
+			path = Todo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E8A530062604036800E0959A /* Project object */;
 }
