@@ -9,6 +9,7 @@
 import SwiftUI
 import CoreData
 
+// Main view - Todo list view.
 struct TodoListView : View {
     
     // MARK: - Core Data
@@ -31,7 +32,7 @@ struct TodoListView : View {
         NavigationView {
             
             List {
-                // The various cell types could be extracted.
+                // Todo Cell view.
                 Section(header: Text("Add Tasks To The List")) {
                     HStack {
                         TextField("New Task Here...", text: $newTodo)
@@ -66,7 +67,7 @@ struct TodoListView : View {
                     }
                     .onDelete(perform: deleteCompletedTodos(at:))
                 }
-            }
+            } // Main navbar, with title and button.
             .listStyle(GroupedListStyle())
             .navigationBarTitle(Text("TaskMaster 🔖"))
             .navigationBarItems(trailing: EditButton())

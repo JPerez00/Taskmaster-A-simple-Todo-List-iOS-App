@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Todo Cell view, loaded in the Todo List view.
 struct TodoCell: View {
     @ObservedObject var todo: Todo
     var body: some View {

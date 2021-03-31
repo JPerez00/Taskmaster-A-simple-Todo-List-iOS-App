@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "TM_App_Icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "TM_App_Icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
